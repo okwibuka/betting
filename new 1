@@ -1,0 +1,31 @@
+#include<iostrem>
+using namespace std;
+int main()
+{
+int high,low,i;
+bool isprime=true;
+cout <<"enter two numbers"<<endl;
+cin>>high>>low;
+cout<<"prime number between"<<high<<"and"<<low<<"are"<<endl;
+while(low<high)
+{
+isprime=true;
+if(low==0||low==1)
+{
+isprime=false;
+else{
+for(i=2;i<=low/2;i++)
+{
+if(i%2==0){
+isprime=false;
+break;
+}}}
+if(isprime)
+{
+cout<<low<<endl;
+++low;
+}
+return 0;
+}
+
+
